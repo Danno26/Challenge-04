@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A quiz thing">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Quiz">
+    <meta name="author" content="Rock-Lee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4 Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="JavaScript" href="script.js">
+
+</head>
+
+<body>
+    <div class="view-highscores"><a href="scores.html">Highscores List!</a></div>
+    <div class="countdown">Time: <span id="time">0</span></div>
+
+    <div class="container">
+        <div class="start" id="start-screen">
+            <h1>Quiz Challenge</h1>
+            <p> Answer all the nerd/weeb/STEM questions before the countdown is over! Wrong answers -10 seconds! Good luck to all you chunin and 1-Star Meisters!
+            </p>
+            <button id="start-btn">Start!</button>
+        </div>
+
+        <div class="hide" id="questions">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>Finished!</h2>
+            <p>Congrats Your Score: <span id="score"></span>.</p>
+
+            <p>
+                Your Name: <input type="text" id="your-name" />
+                <button id="submit-btn">Submit!</button>
+            </p>
+        </div>
+        <script sc="script.js"></script>
+    </div>
+</body>
+
+</html>
